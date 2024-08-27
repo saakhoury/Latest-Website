@@ -22,7 +22,7 @@ export function Navigation() {
               isDarkMode ? '/images/dark-logo.png' : '/images/light-logo.png'
             }
             alt="Home"
-            className="h-24 w-24"
+            className="h-24 w-24 "
           />
         </Link>
 
@@ -41,64 +41,66 @@ export function Navigation() {
       </div>
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 z-50 mx-auto flex w-full max-w-screen-xl flex-col items-center gap-4 bg-white pt-14 dark:bg-gray-800 md:hidden">
-          {/* Close Button Inside the Mobile Menu */}
-          <button
-            aria-label="Close menu"
-            className="absolute right-4 top-4 p-2 text-xl text-slate-800 dark:text-white"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            <MdClose />
-          </button>
-          <Link
-            href="/"
-            className="nav-link no-hover"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            <img
-              src={
-                isDarkMode ? '/images/dark-logo.png' : '/images/light-logo.png'
-              }
-              alt="Home"
-              className="h-24 w-24"
-            />
-          </Link>
-          <Link
-            href="/experiences"
-            className="nav-link text-lg font-light"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Experiences
-          </Link>
-          <Link
-            href="/projects"
-            className="nav-link text-lg font-light"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Projects
-          </Link>
-          <Link
-            href="/music"
-            className="nav-link text-lg font-light"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Portfolio
-          </Link>
-          <Link
-            href="/blogs"
-            className="nav-link text-lg font-light"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Thoughts
-          </Link>
-          <ThemeSwitch />
-        </div>
-      )}
+      <div
+        className={`fixed top-0 right-0 bottom-0 z-50 mx-auto flex w-full max-w-screen-xl flex-col items-center gap-4 bg-white pt-14 dark:bg-gray-950 md:hidden transform transition-transform duration-300 ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        {/* Close Button Inside the Mobile Menu */}
+        <button
+          aria-label="Close menu"
+          className="absolute right-4 top-4 p-2 text-xl text-slate-800 dark:text-white"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <MdClose />
+        </button>
+        <Link
+          href="/"
+          className="nav-link no-hover"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <img
+            src={
+              isDarkMode ? '/images/dark-logo.png' : '/images/light-logo.png'
+            }
+            alt="Home"
+            className="h-24 w-24"
+          />
+        </Link>
+        <Link
+          href="/experiences"
+          className="nav-link text-lg font-light"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          Experiences
+        </Link>
+        <Link
+          href="/projects"
+          className="nav-link text-lg font-light"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          Projects
+        </Link>
+        <Link
+          href="/music"
+          className="nav-link text-lg font-light"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          Portfolio
+        </Link>
+        <Link
+          href="/blogs"
+          className="nav-link text-lg font-light"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          Thoughts
+        </Link>
+        <ThemeSwitch />
+      </div>
 
       {/* Desktop Menu */}
-      <div className="hidden lg:flex lg:items-center lg:justify-between lg:space-x-2">
-        <Link href="/experiences" className="nav-link text-lg font-light">
+      <div className="hidden lg:flex lg:items-center lg:justify-between lg:space-x-">
+        <Link href="/experiences" className="ml-[6rem] nav-link text-lg font-light">
           Experiences
         </Link>
         <Link href="/projects" className="nav-link text-lg font-light">

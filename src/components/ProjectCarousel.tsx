@@ -39,7 +39,7 @@ const ProjectCarousel = () => {
   }, []);
 
   return (
-    <div className="space-y-8">
+    <div className="mb-[-15rem] space-y-8">
       <div className="relative h-[450px]">
         {projects.map((project, index) => (
           <div
@@ -84,7 +84,7 @@ const ProjectCarousel = () => {
           <button
             key={index}
             onClick={() => setCurrentProjectIndex(index)}
-            className={`mt-[-3rem] mx-1 h-3 w-3 rounded-full transition-colors duration-300 ${
+            className={`mt-[20rem] mx-1 h-3 w-3 rounded-full transition-colors duration-300 ${
               index === currentProjectIndex ? 'bg-blue-500' : 'bg-gray-300 dark:bg-gray-600'
             }`}
             aria-label={`Slide ${index + 1}`}

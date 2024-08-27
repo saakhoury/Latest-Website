@@ -6,9 +6,9 @@ import { Button } from '@/components/ui/button'
 import { Github, Linkedin, Twitter } from 'lucide-react'
 import ClientComponents from '/Users/sanskritiakhoury/Desktop/portfolio/src/components/ClientComponents'
 import Link from 'next/link'
-// import ResearchAndThoughts from '@/components/Research&Thoughts'
 import ProjectCarousel from '@/components/ProjectCarousel'
 import { motion } from 'framer-motion'
+import LatestBlogs from '@/components/LatestPosts'
 
 
 export default function Home() {
@@ -85,7 +85,7 @@ export default function Home() {
         variants={fadeInUp}
         transition={{ duration: 0.8 }}
       >
-      <div className="content mt-[2rem]">
+      <div className="content mt-[1.5rem]">
         <h2 className="text-justify text-xl font-bold text-gray-900 dark:text-gray-50">
           ABOUT ME
         </h2>
@@ -261,6 +261,18 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </motion.div>
+
+      <motion.div
+        ref={scrollRef}
+        className="flex flex-col items-center justify-between md:flex-row"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInUp}
+        transition={{ duration: 0.8 }}
+      >            
+        <LatestBlogs/>
       </motion.div>
 
       <motion.div

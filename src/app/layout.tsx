@@ -54,7 +54,7 @@ export default function RootLayout({
       <body className="relative flex min-h-screen flex-col">
         <ThemeProvider attribute="class" defaultTheme="dark">
           <div className="z-10 flex-grow">
-            <header className="py-4">
+            <header className="py-4 text-center mr-[3.5rem]">
               <Container>
                 <Navigation /> 
               </Container>
