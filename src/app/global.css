@@ -1,3 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.nav-link {
+  @apply text-lg font-medium transition-colors duration-200;
+}
+
+.nav-link:hover {
+  @apply text-gray-600 dark:text-gray-300;
+}
+
+@media (max-width: 767px) {
+  .name-title-wrapper {
+    margin-top: 1.5rem; /* Adjust this value as needed */
+  }
+}
+.nav-image {
+  width: 75px; /* Image width */
+  height: 75px; /* Image height */
+  margin-right: 1rem; /* Spacing between image and text */
+}
+
+/* Define the highlight effect */
+.highlight-header {
+  position: relative; /* Ensure the pseudo-element is positioned relative to the header */
+  display: inline-block; /* Allow the pseudo-element to be positioned correctly */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for color and shadow */
+}
+
+/* Add the highlight effect using a pseudo-element */
+.highlight-header::before {
+  content: ''; /* Create an empty pseudo-element */
+  position: absolute; /* Position it absolutely within the header */
+  left: 0; /* Align it to the left of the header */
+  bottom: -2px; /* Place it slightly below the text */
+  width: 100%; /* Make it the full width of the header */
+  height: 2px; /* Define the height of the highlight */
+  background: teal; /* Highlight color for light mode */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Change the highlight effect on hover */
+.highlight-header:hover::before {
+  opacity: 1; /* Show the highlight on hover */
+}
+
+/* Handle dark mode */
+@media (prefers-color-scheme: dark) {
+  .highlight-header::before {
+    background: lightblue; /* Highlight color for dark mode */
+  }
+
+  .highlight-header:hover {
+    color: lightblue; /* Change text color on hover in dark mode */
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -103,6 +169,19 @@
   @apply rounded-md px-6 py-2 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none;
 }
 
+.nav-link {
+  @apply rounded-md px-6 py-2 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none;
+}
+
+/* Specific styling for image link to disable hover and focus effects */
+.no-hover {
+  @apply hover:bg-transparent hover:text-current focus:bg-transparent focus:text-current;
+}
+
+/* Ensure no transition effects on hover for the image */
+.nav-link img {
+  transition: none; /* Disable transition effects */
+}
 /* Post styles */
 
 .prose .anchor {

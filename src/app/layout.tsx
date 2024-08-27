@@ -1,3 +1,4 @@
+// app/layout.tsx
 import { ThemeProvider } from '@/app/providers'
 import { Container } from '@/components/Container'
 import { Navigation } from '@/components/Navigation'
@@ -8,16 +9,15 @@ import Link from 'next/link'
 import './global.css'
 
 const meta = {
-  title: 'Hunter Chang - Website',
-  description:
-    'Sleep deprived father. FE Engineer in China. Lover of Ramen and Kpop',
+  title: 'Sanskriti Akhoury - Website',
+  description: 'singer',
   image: `${WEBSITE_HOST_URL}/og-preview.jpg`,
 }
 
 export const metadata: Metadata = {
   title: {
     default: meta.title,
-    template: '%s | Hunter Chang',
+    template: '%s | sakhoury',
   },
   description: meta.description,
   openGraph: {
@@ -51,29 +51,31 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="relative flex min-h-screen flex-col">
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <header className="py-4">
-            <Container>
-              <div className="flex items-center justify-between py-6">
-                <Navigation />
-                <ThemeSwitch />
-              </div>
-            </Container>
-          </header>
-          <main>
-            <Container>{children}</Container>
-          </main>
-          <footer className="py-16">
+          <div className="z-10 flex-grow">
+            <header className="py-4">
+              <Container>
+                <Navigation /> 
+              </Container>
+            </header>
+            <main className="flex-grow">
+              <Container>{children}</Container>
+            </main>
+          </div>
+          <footer className="z-10 mt-auto py-16">
             <Container>
               <p>
                 Built by{' '}
                 <Link className="link" href="https://twitter.com/hunterhchang">
-                  Hunter Chang
+                  Sanskriti Akhoury
                 </Link>
               </p>
             </Container>
           </footer>
+          <div className="pointer-events-none absolute inset-0 z-0">
+            <div className="absolute inset-0 bg-[url('/images/texture.jpg')] opacity-20 mix-blend-overlay transition-opacity duration-300 dark:opacity-0"></div>
+          </div>
         </ThemeProvider>
       </body>
     </html>
