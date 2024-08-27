@@ -25,7 +25,7 @@ export default function Shapes() {
           <ContactShadows
             position={[0, -3.5, 0]}
             opacity={0.65}
-            scale={60}
+            scale={80}
             blur={1}
             color={isDarkMode ? 'blue' : 'black'}
             far={9}

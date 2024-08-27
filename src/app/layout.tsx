@@ -1,7 +1,7 @@
 // app/layout.tsx
 import { ThemeProvider } from '@/app/providers'
 import { Container } from '@/components/Container'
-import { Navigation } from '@/components/Navigation'
+import Navigation from '@/components/Navigation'
 import ThemeSwitch from '@/components/ThemeSwitch'
 import { WEBSITE_HOST_URL } from '@/lib/constants'
 import type { Metadata } from 'next'
@@ -54,12 +54,8 @@ export default function RootLayout({
       <body className="relative flex min-h-screen flex-col">
         <ThemeProvider attribute="class" defaultTheme="dark">
           <div className="z-10 flex-grow">
-            <header className="py-4 text-center mr-[3.5rem]">
-              <Container>
-                <Navigation /> 
-              </Container>
-            </header>
             <main className="flex-grow">
+            <Container><Navigation /> </Container>
               <Container>{children}</Container>
             </main>
           </div>
