@@ -22,7 +22,7 @@ const Navigation = () => {
     <div className="mt-[2rem]">
 
       <Container>
-      <div className='absolute top-0 right-0 p-10'>
+      <div className='absolute top-0 right-0 p-4'>
     <ThemeSwitch />
   </div>
 </Container>
@@ -86,7 +86,7 @@ const Navigation = () => {
               </div>
             </div>
           </div>
-          <div className="mt-[2rem] mb-[-2rem] mr-[-5rem] justify-center md:mt-0 md:w-1/2">
+          <div className="mt-[2rem] mb-[-2rem] justify-center md:mt-0 md:w-1/2">
             <ClientComponents />
           </div>
         </div>
