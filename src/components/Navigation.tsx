@@ -3,8 +3,7 @@
 
 import { useRef } from 'react'
 import { Button } from '@/components/ui/button'
-import { Github, Linkedin, Twitter } from 'lucide-react'
-import ClientComponents from '/Users/sanskritiakhoury/Desktop/portfolio/src/components/ClientComponents'
+import Shapes from '../components/ClientComponents';
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import ThemeSwitch from '@/components/ThemeSwitch' // Adjust the import path as needed
@@ -87,7 +86,7 @@ const Navigation = () => {
             </div>
           </div>
           <div className="mt-[2rem] mb-[-2rem] justify-center md:mt-0 md:w-1/2">
-            <ClientComponents />
+            <Shapes />
           </div>
         </div>
       </motion.div>
