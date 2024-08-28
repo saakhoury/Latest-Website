@@ -4,7 +4,6 @@
 import { useRef } from 'react'
 import { Button } from '@/components/ui/button'
 import { Github, Linkedin, Twitter } from 'lucide-react'
-import ClientComponents from '/Users/sanskritiakhoury/Desktop/portfolio/src/components/ClientComponents'
 import Link from 'next/link'
 import ProjectCarousel from '@/components/ProjectCarousel'
 import { motion } from 'framer-motion'
