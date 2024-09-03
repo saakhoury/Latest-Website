@@ -1,38 +1,41 @@
+"use client"
+
 import { WEBSITE_HOST_URL } from '@/lib/constants'
+import { useRef } from 'react'
 import { allPosts } from 'contentlayer/generated'
 import { format, parseISO } from 'date-fns'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { PostCard } from '@/components/PostCard' // Ensure you import PostCard if it's defined in another file
+import { motion } from 'framer-motion'
 
-export const metadata: Metadata = {
-  title: 'All Posts',
-  description: 'A list of all blog posts',
-  openGraph: {
-    title: 'All Posts',
-    description: 'A list of all blog posts',
-    url: `${WEBSITE_HOST_URL}/posts`,
-  },
-  twitter: {
-    title: 'All Posts',
-    description: 'A list of all blog posts',
-  },
-}
+export default function PostsPage() {
+  const scrollRef = useRef(null)
 
-const PostsPage = () => {
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  }
+
   return (
-    <div className="mt-16">
-      <h2>From the blog</h2>
-      <p className="mt-2 leading-8">
-        Blog posts are written with MDX and processed through Contentlayer.
-      </p>
-      <div className="mt-10 space-y-12 border-t border-gray-200 pt-10 dark:border-gray-700">
-        {allPosts.map((post, idx) => (
-          <PostCard key={idx} {...post} />
-        ))}
+    <motion.div
+      ref={scrollRef}
+      className="flex flex-col items-center justify-between md:flex-row"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={fadeInUp}
+      transition={{ duration: 0.8 }}
+    >
+      <div>
+        <h2 className='text-xl'>THOUGHTS & BLOGS</h2>
+        <div className="mt-10 space-y-12">
+          {allPosts.map((post, idx) => (
+            <PostCard key={idx} {...post} />
+          ))}
+          <p>coming soon ...</p>
+        </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
-
-export default PostsPage

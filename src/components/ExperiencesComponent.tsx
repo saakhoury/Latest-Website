@@ -11,104 +11,212 @@ const experiences = [
     title: 'Data Engineer',
     company: '@ NGen Canada',
     description:
-    'Worked on advanced manufacturing and AI initiatives, focusing on data engineering and analytic tasks such as building data pipelines and ML models. Completed and contributed to 16 projects accelerating NGens impact. Received a return offer and continuing part-time', 
+    <div>
+        <ul>
+          <li>
+            Worked on advanced manufacturing and AI initiatives, focusing on data engineering and analytic tasks such as building data pipelines and ML models. Completed and contributed to 16 projects accelerating NGen’s impact.
+          </li>
+          <li className='text-white dark:text-gray-950'>
+            hello
+          </li>
+          <a href="URL_OF_THE_PAGE" className="text-blue-500 hover:underline">READ MORE</a>
+        </ul>
+      </div>,
     date: 'Jan 2022 - Present',
     tools: ['Python', 'SQL', 'AWS'],
-    image: '/images/ngen.png', // New image for job description
   },
   {
     id: 'blueprint',
     logo: '/images/bp.png',
-    title: 'Software Developer Intern',
-    company: '@ TechCorp',
+    title: 'Infrastructure Project Developer',
+    company: '@ UW Blueprint',
     description:
-      'Assisted in developing web applications and improving backend performance.',
+    <div>
+    <ul>
+      <li>
+      Tech for social good. Specialized in infrastructure development, utilizing tools like Kubernetes, AWS, Docker, Prisma, Terraform, and Heroku to enhance project efficiency and deployment processes.
+      </li>
+    </ul>
+  </div>,
     date: 'Jun 2021 - Dec 2021',
     tools: ['React', 'Node.js', 'Docker'],
-    image: '/images/bp-project.png', // New image for job description
   },
   {
-    id: 'front row ventures',
+    id: 'front-row-ventures',
     logo: '/images/frv.png',
-    title: 'Product Manager',
-    company: '@ Innovate Inc',
+    title: 'Data Analyst & Webmaster',
+    company: '@ Front Row Ventures',
     description:
-      'Managed product lifecycle from ideation to launch, focusing on user experience and market fit.',
+    <div>
+    <ul>
+      <li>
+      Optimized funding processes through data-driven strategies, managed web content, and analyzed key performance metrics to support investment decisions. Completed two-month venture capital bootcamp, gaining exclusive insights from local VCs and founders.
+      </li>
+    </ul>
+  </div>,
     date: 'Mar 2020 - May 2021',
     tools: ['Jira', 'Figma', 'Slack'],
-    image: '/images/frv-project.png', // New image for job description
   },
   {
     id: 'inloop',
-    logo: '/images/frv.png',
-    title: 'Product Manager',
-    company: '@ inloop',
-    description:
-      'Managed product lifecycle from ideation to launch, focusing on user experience and market fit.',
+    logo: '/images/inloop.png',
+    title: 'CoFounder & Vice President',
+    company: '@ InLoop',
+    description: (
+      <div>
+        <ul>
+          <li>
+            • Led the development of a fullstack Deloitte-backed digital gaming
+            platform incentivizing news literacy for youth
+          </li>
+          <li>
+            • Implemented a React leaderboard and optimized workflows using
+            Agile and Jira, raising user engagement by 45%
+          </li>
+          <li>
+            • Engineered an accompanying ecommerce app using Stripe, Payload
+            CMS, & Docker to optimize client interaction
+          </li>
+          <li>
+            • Commanded a dynamic team of 30+ members & generated a pipeline
+            interest of $30K+, resulting in $7K net revenue
+          </li>
+        </ul>
+      </div>
+    ),
     date: 'Mar 2020 - May 2021',
     tools: ['Jira', 'Figma', 'Slack'],
-    image: '/images/frv-project.png', // New image for job description
   },
   {
     id: 'underthetoque',
     logo: '/images/frv.png',
-    title: 'Product Manager',
-    company: '@ underthetoque',
-    description:
-      'Managed product lifecycle from ideation to launch, focusing on user experience and market fit.',
+    title: 'CoFounder & Vice President',
+    company: '@ UnderThetoque',
+    description: (
+      <div>
+        <ul>
+          <li>
+            • A TD-sponsored online resource for 15,000+ immigrants, expats, &
+            refugees
+          </li>
+          <li>
+            • Combined UI/UX research and prioritizing user stories in designing
+            the interface
+          </li>
+          <li>
+            • Commanded a dynamic team, harnessing Jira & Trello to optimize
+            departmental workflows
+          </li>
+          <li>
+            • JA Youth Entrepreneurs Showcase Achiever’s Choice & Top 3 JA
+            Companies of the Year
+          </li>
+        </ul>
+      </div>
+    ),
     date: 'Mar 2020 - May 2021',
     tools: ['Jira', 'Figma', 'Slack'],
-    image: '/images/frv-project.png', // New image for job description
   },
   {
     id: 'stemfellowship',
     logo: '/images/frv.png',
-    title: 'Product Manager',
-    company: '@ stemfellowship',
-    description:
-      'Managed product lifecycle from ideation to launch, focusing on user experience and market fit.',
+    title: 'Chapter President',
+    company: '@ StemFellowship',
+    description: (
+      <div>
+        <ul className='text-justify'>
+          <li className='text-justify'>• Mentored 30+ teams leading to three international wins</li>
+          <li>
+            • Taught datasets, data analytics, computational thinking, Tableau,
+            R, and Statistics
+          </li>
+          <li>• Worked on scientific writing, provided feedback.</li>
+          <li>
+            • Edited scholarly papers ranging from original research
+            manuscripts to literature reviews.
+          </li>
+          <li>
+            • Presented solutions & defended them in
+            scientific discussions for Physics Matches.
+          </li>
+        </ul>
+      </div>
+    ),
     date: 'Mar 2020 - May 2021',
     tools: ['Jira', 'Figma', 'Slack'],
-    image: '/images/frv-project.png', // New image for job description
   },
   {
     id: 'DECA',
     logo: '/images/frv.png',
-    title: 'Product Manager',
+    title: 'Chapter President & Competitor',
     company: '@ DECA',
-    description:
-      'Managed product lifecycle from ideation to launch, focusing on user experience and market fit.',
+    description: (
+      <div>
+        <ul>
+          <li>
+            Bloor Collegiate Chapter Executive. Qualified on the basis of
+            role-play performances and 100 question cluster exam. Competed
+            against 120,000 students in DECA's high school chapters worldwide.
+          </li>
+          <li className='text-white dark:text-gray-950'>
+            hello
+          </li>
+          <li>
+          • Regionals: Top 20 score overall and Top 2 score in role-play
+            overall. 
+          </li>
+          <li>
+          • Provincials: Top 14 score overall and Top 7 score in
+          role-play overall. 
+          </li>
+          <li>
+          • International Career Development Conference
+          (ICDC): Top 15 score in role-play, 4th overall at ICDC
+          </li>
+        </ul>
+      </div>
+    ),
     date: 'Mar 2020 - May 2021',
     tools: ['Jira', 'Figma', 'Slack'],
-    image: '/images/frv-project.png', // New image for job description
   },
   {
     id: 'toastmasters',
     logo: '/images/frv.png',
-    title: 'Product Manager',
-    company: '@ toastmasters',
-    description:
-      'Managed product lifecycle from ideation to launch, focusing on user experience and market fit.',
+    title: 'Youth Leadership Program Founder',
+    company: '@ Toastmasters',
+    description: (
+      <div>
+        <ul>
+          <li>
+          With Dave Bachan, Toastmaster's Executive, launched a Youth Leadership Program in junction with Toastmasters International. Provided Toronto Youth POC with leadership, public-speaking, mentorship, feedback and strategic vision. Invited guest speakers, curated workshops, and led a team.
+          </li>
+        </ul>
+      </div>
+    ),
     date: 'Mar 2020 - May 2021',
     tools: ['Jira', 'Figma', 'Slack'],
-    image: '/images/frv-project.png', // New image for job description
   },
   {
-    id: '',
-    logo: '/images/frv.png',
+    id: 'extra-job',
+    logo: '/images/cube4.png',
     title: 'Product Manager',
-    company: '@ toastmasters',
-    description:
-      'Managed product lifecycle from ideation to launch, focusing on user experience and market fit.',
+    company: '@ theCubeStemSchool',
+    description: (
+      <div>
+        <ul>
+          <li>
+          Python, C++, Arduino, Java Instructor
+          </li>
+        </ul>
+      </div>
+    ),
     date: 'Mar 2020 - May 2021',
     tools: ['Jira', 'Figma', 'Slack'],
-    image: '/images/frv-project.png', // New image for job description
   },
   // Add more experiences if needed
 ]
 
 export default function Experiences() {
-  // Start with the first experience selected by default
   const [selectedExperience, setSelectedExperience] = useState(
     experiences[0].id,
   )
@@ -117,7 +225,6 @@ export default function Experiences() {
     setSelectedExperience(id)
   }
 
-  // Define animation variants
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -125,7 +232,7 @@ export default function Experiences() {
   }
 
   return (
-    <div className="min-h-screen flex-col items-center py-12">
+    <div className="items-left flex flex-col">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -133,7 +240,7 @@ export default function Experiences() {
         variants={cardVariants}
         className="mb-12"
       >
-        <h2 className="highlight text-justify text-xl font-bold text-gray-900 dark:text-gray-50">
+        <h2 className="text-xl font-bold text-gray-900 dark:text-gray-50">
           EXPERIENCES
         </h2>
       </motion.div>
@@ -150,58 +257,62 @@ export default function Experiences() {
           <button
             key={exp.id}
             onClick={() => handleLogoClick(exp.id)}
-            className="focus:outline-none"
+            className={`rounded-full border p-1 ${
+              selectedExperience === exp.id
+                ? 'border-gray-900 dark:border-gray-300'
+                : 'border-gray-500 dark:border-gray-600'
+            } transition-all`}
           >
-            <div
-              className={`flex h-12 w-12 items-center justify-center rounded-full border ${
-                selectedExperience === exp.id
-                  ? 'border-gray-900'
-                  : 'dark:border-gray-500'
-              } transition-all`}
-            >
-              {exp.logo ? (
-                <img
-                  src={exp.logo}
-                  alt={`${exp.company} logo`}
-                  className="h-10 w-10 rounded-full"
-                />
-              ) : (
-                <div className="text-sm">{exp.company}</div>
-              )}
-            </div>
+            <img
+              src={exp.logo}
+              alt={`${exp.company} logo`}
+              className="h-9 w-9 rounded-full"
+            />
           </button>
         ))}
       </motion.div>
-
-      {/* Experience Details with Image and Animation */}
       <AnimatePresence mode="wait">
         {experiences.map(
           (exp) =>
             selectedExperience === exp.id && (
-              <motion.div
-                key={exp.id}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-                variants={cardVariants}
-                className="mx-auto mb-8 max-w-4xl px-4"
-              >
-                <div className="mb-8">
-                  <h3 className="mb-1 text-lg font-bold">
-                    {exp.title} {exp.company}
-                  </h3>
-                  <p className="text-md mb-1 font-semibold">{exp.date}</p>
-                  <p className="mb-3 text-base">{exp.description}</p>
-                  <img
-                    src={exp.image}
-                    alt={`${exp.company} project`}
-                    className="mb-4 h-auto w-full rounded-md shadow-lg"
-                  />
-                  <p className="text-sm">
-                    <strong>Tools:</strong> {exp.tools.join(', ')}
-                  </p>
-                </div>
-              </motion.div>
+              <div key={exp.id} className="relative mb-0">
+                {/* Experience Card */}
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  variants={cardVariants}
+                  className="relative rounded-lg p-8 shadow-md"
+                >
+                  {/* Title Section */}
+                  <div className="mb-4 flex items-center">
+                    {/* Circular Logo */}
+                    <div className="mr-4 h-12 w-12 flex-shrink-0">
+                      <img
+                        src={exp.logo}
+                        alt={`Logo for ${exp.company}`}
+                        className="h-full w-full rounded-full object-cover"
+                      />
+                    </div>
+
+                    {/* Title and Company Info */}
+                    <div>
+                      <h3 className="text-lg font-normal italic">
+                        {exp.title}
+                      </h3>
+                      <p className="highlight text-sm text-gray-600 dark:text-gray-300">
+                        {exp.company}
+                        <span className="ml-2"> &mdash; {exp.date}</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Description Section */}
+                  <div>
+                    <p className="text-sm">{exp.description}</p>
+                  </div>
+                </motion.div>
+              </div>
             ),
         )}
       </AnimatePresence>

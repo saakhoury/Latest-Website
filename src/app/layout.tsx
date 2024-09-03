@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="relative flex min-h-screen flex-col">
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider attribute="class" defaultTheme="light">
           <div className="z-10 flex-grow">
             <main className="flex-grow">
             <Container><Navigation /> </Container>

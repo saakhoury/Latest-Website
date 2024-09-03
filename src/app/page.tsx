@@ -7,8 +7,6 @@ import { Github, Linkedin, Twitter } from 'lucide-react'
 import Link from 'next/link'
 import ProjectCarousel from '@/components/ProjectCarousel'
 import { motion } from 'framer-motion'
-import LatestBlogs from '@/components/LatestPosts'
-import CoopSpotlight from '@/components/CoopSpotlight'
 
 export default function Home() {
   const scrollRef = useRef(null)
@@ -27,7 +25,7 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen flex-col items-center py-12">
+    <div className="min-h-screen flex-col items-center">
       <motion.div
         ref={scrollRef}
         className="flex flex-col items-center justify-between md:flex-row"
@@ -38,38 +36,54 @@ export default function Home() {
         transition={{ duration: 0.8 }}
       >
         <div className="content">
-          <h2 className="highlight text-justify text-xl font-bold text-gray-900 dark:text-gray-50">
+          <h2 className="highlight mt-[5rem] text-justify text-xl font-bold text-gray-900 dark:text-gray-50">
             ABOUT ME
           </h2>
+          <ul className="mb-[2rem] mt-8 list-inside list-disc text-justify text-[0.9rem] font-normal dark:text-gray-400">
+            <li className="mb-2">
+              {' '}
+              {/* Added mb-4 for spacing */}
+              Developing{' '}
+              <span className="highlight text-[0.9rem] font-medium">
+                AI/ML/infrastructure
+              </span>{' '}
+              tools to enhance enterprise product offerings.
+            </li>
+            <li className="mb-2">
+              {' '}
+              {/* Added mb-4 for spacing */}
+              Placed{' '}
+              <span className="highlight text-[0.9rem] font-medium">
+                fourth @ ICDC DECA
+              </span>{' '}
+              {/* Adjusted spacing */}
+              (International Career Development Conference)
+            </li>
+            <li className="mb-2">
+              {' '}
+              {/* Added mb-4 for spacing */}
+              Top 3 in{' '}
+              <span className="highlight text-[0.9rem] font-medium">
+                RBC's Metaverse Case Competition
+              </span>
+            </li>
+            <li>
+              3x Startup Founder with sponsorships and mentorships from{' '}
+              <span className="highlight text-[0.9rem] font-medium">
+                TD, Deloitte, & IFDS Canada.
+              </span>
+            </li>
+          </ul>
+
           <p className="mt-4 text-justify text-[0.9rem] font-normal dark:text-gray-400">
-            Develop{' '}
-            <span className="highlight font-medium dark:text-gray-300 ">
-              AI/ML/infrastructure tools
-            </span>{' '}
-            to enhance enterprise product offerings. Placed{' '}
-            <span className="highlight font-medium dark:text-gray-300 ">
-              fourth @ ICDC DECA
-            </span>{' '}
-            (International Career Development Conference) and{' '}
-            <span className="highlight font-medium dark:text-gray-300 ">
-              top 3
-            </span>{' '}
-            in{' '}
-            <span className="highlight font-medium dark:text-gray-300">
-              RBC{"'"}s Metaverse Case Competition.
-            </span>{' '}
-            3x Startup Founder with sponsorships and mentorships from{' '}
-            <span className="highlight font-medium dark:text-gray-300 ">
-              TD, Deloitte, & IFDS Canada.
-            </span>{' '}
             With a head for entrepreneurial and tech ventures, I am actively
-            pursuing opportunities at the intersection of project management and
-            technology. Feel free to reach out :{')'} <br /> <br />
-            Also got the golden ticket on{' '}
-            <span className="highlight font-medium dark:text-gray-300 ">
+            pursuing opportunities at the intersection of{' '}
+            <span>project management and technology. </span>
+            Competed on{' '}
+            <span className="highlight text-justify font-medium dark:text-gray-300">
               American Idol
             </span>{' '}
-            from Lionel Richie, Katy Perry, and Luke Ryan (ABC S6)
+            for judges Lionel Richie, Katy Perry, and Luke Bryan (ABC S6)
           </p>
 
           <style jsx>{`
@@ -156,90 +170,6 @@ export default function Home() {
                 Vocal Portfolio →
               </Button>
             </Link>
-          </div>
-        </div>
-      </motion.div>
-
-      <CoopSpotlight />
-
-      <motion.div
-        ref={scrollRef}
-        className="flex flex-col items-center justify-between md:flex-row"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeInUp}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="content mt-[6rem]">
-          <h2 className="highlight relative mb-8 text-xl font-bold text-gray-900 dark:text-gray-100">
-            SUMMER 2024 HIGHLIGHTS
-          </h2>
-
-          <div className="mt-4 space-y-8">
-            <div className="relative transform overflow-hidden rounded-lg border-gray-200 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="absolute inset-0"></div>
-              <div className="relative mt-[1rem] p-6">
-                <h3 className="highlight-header relative text-lg font-normal text-gray-900 dark:text-gray-100">
-                  {' '}
-                  🔍 Recommender System & LLM Development{' '}
-                </h3>
-                <p className="mt-4 text-justify text-sm text-gray-600 dark:text-gray-400">
-                  Leveraged data pipelines to build a recommender system with Graph Neural Networks (GNN) as a{' '}
-                  <strong className="highlight text-black dark:text-gray-200">personal project,</strong>
-                  {' '}enhancing user engagement by 20% with personalized recommendations. Additionally,
-                  developed an LLM chatbot testing tool employing
-                  advanced Retrieval-Augmented Generation (RAG) techniques,
-                  contributing to the creation of the {'"'}AI Use Cases in Advanced
-                  Manufacturing{'"'} report submitted to the{' '}
-                  <strong className="highlight text-black dark:text-gray-200">
-                  Board & ISED Canada
-                  </strong>{' '}
-                  (International Science Education & Development) with{' '}
-                  <strong className="highlight text-black dark:text-gray-200">
-                    NGen Canada.
-                  </strong>
-                </p>
-              </div>
-            </div>
-
-            <div className="relative mt-[-7rem] transform overflow-hidden rounded-lg border-gray-200 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="absolute inset-0 mt-[-3rem] bg-gradient-to-br from-green-200 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-40"></div>
-              <div className="relative mt-[-1rem] p-6">
-                <h3 className="highlight-header relative mb-[-1rem] text-lg font-normal text-gray-900 dark:text-gray-100">
-                  {' '}
-                  ⚙️ Development Workflow Improvement{' '}
-                </h3>
-                <p className="mt-[-3rem] text-justify text-sm text-gray-600 dark:text-gray-400">
-                  Improved development workflows through backend migration to
-                  Prisma, automated Heroku application deployment, and Firebase
-                  token generation for efficient and scalable infrastructure
-                  operations with{' '}
-                  <strong className="highlight text-black dark:text-gray-200">
-                    UW Blueprint.
-                  </strong>
-                </p>
-              </div>
-            </div>
-
-            <div className="relative mt-[-2rem] transform overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="absolute inset-0 mt-[-1rem] bg-gradient-to-br from-yellow-200 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-40"></div>
-              <div className="relative mt-[-1rem] p-6">
-                <h3 className="highlight-header relative mb-[-1rem] text-lg font-normal text-gray-900 dark:text-gray-100">
-                  📈 SEO Tool Development and Data Analysis
-                </h3>
-                <p className="mt-4 text-justify text-sm text-gray-600 dark:text-gray-400">
-                  Developed an embeddings model for SEO, optimizing keyword
-                  identification and enhancing online visibility. Leveraged data
-                  analytics to guide strategic investment decisions, performing
-                  market trend analysis and providing actionable insights that
-                  help drive successful venture investments at{' '}
-                  <strong className="highlight text-black dark:text-gray-200">
-                    Front Row Ventures.
-                  </strong>
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </motion.div>
@@ -357,30 +287,16 @@ export default function Home() {
         </div>
       </motion.div>
 
-      <div className="content mt-[5rem]">
-        <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+      <div className="content mt-[4.5rem]">
+        <h2 className="mb-[3rem] text-xl font-bold text-gray-900 dark:text-gray-100">
           <Link href="/Projects">
             <span className="inline-block transform transition-transform duration-300 hover:scale-125">
-              PROJECTS & PAPERS →
+              PROJECTS →
             </span>
           </Link>
         </h2>
         <ProjectCarousel />
       </div>
-
-      <motion.div
-        ref={scrollRef}
-        className="flex flex-col items-center justify-between md:flex-row"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeInUp}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="content mt-[19rem]">
-          {/* <ResearchAndThoughts /> */}
-        </div>
-      </motion.div>
     </div>
   )
 }
