@@ -64,7 +64,7 @@ export default function Home() {
               {/* Added mb-4 for spacing */}
               Top 3 in{' '}
               <span className="highlight text-[0.9rem] font-medium">
-                RBC's Metaverse Case Competition
+                RBC{"'"}s Metaverse Case Competition
               </span>
             </li>
             <li>

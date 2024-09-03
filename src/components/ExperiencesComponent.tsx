@@ -14,7 +14,7 @@ const experiences = [
     <div>
         <ul>
           <li>
-            Worked on advanced manufacturing and AI initiatives, focusing on data engineering and analytic tasks such as building data pipelines and ML models. Completed and contributed to 16 projects accelerating NGen’s impact.
+            Worked on advanced manufacturing and AI initiatives, focusing on data engineering and analytic tasks such as building data pipelines and ML models. Completed and contributed to 16 projects accelerating NGen{"'"}s impact.
           </li>
           <li className='text-white dark:text-gray-950'>
             hello
@@ -108,7 +108,7 @@ const experiences = [
             departmental workflows
           </li>
           <li>
-            • JA Youth Entrepreneurs Showcase Achiever’s Choice & Top 3 JA
+            • JA Youth Entrepreneurs Showcase Achiever{"'"}s Choice & Top 3 JA
             Companies of the Year
           </li>
         </ul>
@@ -156,7 +156,7 @@ const experiences = [
           <li>
             Bloor Collegiate Chapter Executive. Qualified on the basis of
             role-play performances and 100 question cluster exam. Competed
-            against 120,000 students in DECA's high school chapters worldwide.
+            against 120,000 students in DECA{"'"}s high school chapters worldwide.
           </li>
           <li className='text-white dark:text-gray-950'>
             hello
@@ -188,7 +188,7 @@ const experiences = [
       <div>
         <ul>
           <li>
-          With Dave Bachan, Toastmaster's Executive, launched a Youth Leadership Program in junction with Toastmasters International. Provided Toronto Youth POC with leadership, public-speaking, mentorship, feedback and strategic vision. Invited guest speakers, curated workshops, and led a team.
+          With Dave Bachan, Toastmaster{"'"}s Executive, launched a Youth Leadership Program in junction with Toastmasters International. Provided Toronto Youth POC with leadership, public-speaking, mentorship, feedback and strategic vision. Invited guest speakers, curated workshops, and led a team.
           </li>
         </ul>
       </div>
