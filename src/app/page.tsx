@@ -39,12 +39,12 @@ export default function Home() {
           <h2 className="highlight mt-[5rem] text-justify text-xl font-bold text-gray-900 dark:text-gray-50">
             ABOUT ME
           </h2>
-          <ul className="mb-[2rem] mt-8 list-inside list-disc text-justify text-[0.9rem] font-normal dark:text-gray-400">
+          <ul className="mb-[2rem] mt-8 list-inside list-disc text-justify text-[0.9rem] font-normal dark:text-gray-300">
             <li className="mb-2">
               {' '}
               {/* Added mb-4 for spacing */}
               Developing{' '}
-              <span className="highlight text-[0.9rem] font-medium">
+              <span className="highlight text-[0.9rem] text-gray-900 dark:text-gray-50 font-medium">
                 AI/ML/infrastructure
               </span>{' '}
               tools to enhance enterprise product offerings.
@@ -53,7 +53,7 @@ export default function Home() {
               {' '}
               {/* Added mb-4 for spacing */}
               Placed{' '}
-              <span className="highlight text-[0.9rem] font-medium">
+              <span className="highlight text-gray-900 dark:text-gray-50 text-[0.9rem] font-medium">
                 fourth @ ICDC DECA
               </span>{' '}
               {/* Adjusted spacing */}
@@ -63,24 +63,24 @@ export default function Home() {
               {' '}
               {/* Added mb-4 for spacing */}
               Top 3 in{' '}
-              <span className="highlight text-[0.9rem] font-medium">
+              <span className="highlight text-gray-900 dark:text-gray-50  text-[0.9rem] font-medium">
                 RBC{"'"}s Metaverse Case Competition
               </span>
             </li>
             <li>
               3x Startup Founder with sponsorships and mentorships from{' '}
-              <span className="highlight text-[0.9rem] font-medium">
+              <span className="highlight text-gray-900 dark:text-gray-50 text-[0.9rem] font-medium">
                 TD, Deloitte, & IFDS Canada.
               </span>
             </li>
           </ul>
 
-          <p className="mt-4 text-justify text-[0.9rem] font-normal dark:text-gray-400">
+          <p className="mt-4 text-justify text-[0.9rem] font-normal dark:text-gray-300">
             With a head for entrepreneurial and tech ventures, I am actively
-            pursuing opportunities at the intersection of{' '}
-            <span>project management and technology. </span>
+            pursuing opportunities at the intersection of project 
+            <span> development and management. </span>
             Competed on{' '}
-            <span className="highlight text-justify font-medium dark:text-gray-300">
+            <span className="highlight text-justify font-medium dark:text-gray-50">
               American Idol
             </span>{' '}
             for judges Lionel Richie, Katy Perry, and Luke Bryan (ABC S6)

@@ -55,7 +55,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <div className="z-10 flex-grow">
             <main className="flex-grow">
-            <Container><Navigation /> </Container>
+              <Container><Navigation /></Container>
               <Container>{children}</Container>
             </main>
           </div>

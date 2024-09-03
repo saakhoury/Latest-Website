@@ -1,5 +1,13 @@
 "use client";
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+
+// Define animation variants for the cards
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
 
 const ProjectCarousel = () => {
   const projects = [
@@ -22,18 +30,6 @@ const ProjectCarousel = () => {
       image: "/projectphotos/resuview.png"
     },
     {
-      title: "Recommender System",
-      description: "Engineered a self-supervised GNN-based recommender system with custom message aggregations & NADAM.",
-      tags: ["Graph Neural Networks", "LLMs", "FP-Growth"],
-      image: "/projectphotos/gnn.png"
-    },
-    {
-      title: "MERN Dashboard",
-      description: "A dashboard with GDP forecasting & dynamic maps, analyzing ridings vs. investments to optimize funding.",
-      tags: ["ARIMA", "SVMs", "Government"],
-      image: "/projectphotos/image_16.png"
-    },
-    {
       title: "Pixel (Dall-E Clone)",
       description: "An AI image generator MERN app with responsive React.js design,  MongoDB indexing & more.",
       tags: ["OPENAI", "MongoDB", "RTK Query"],
@@ -48,7 +44,7 @@ const ProjectCarousel = () => {
     {
       title: "AI Summarizer",
       description: "An SEO tool developed to summarize text & generate embeddings for key-word identification ",
-      tags: ["OpenAI", "React", "Word2Vec"],
+      tags: ["Word2Vec", "Byte Pair Encoding", "Sentence Transformers"],
       image: "/projectphotos/word.png"
     },
     {
@@ -102,9 +98,24 @@ const ProjectCarousel = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+    <motion.div
+      className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8"
+      initial="hidden"
+      animate="visible"
+      variants={{
+        visible: {
+          transition: {
+            staggerChildren: 0.5,
+          },
+        },
+      }}
+    >
       {projects.map((project, index) => (
-        <div key={index} className="rounded-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition duration-300 ease-in-out">
+        <motion.div
+          key={index}
+          className="rounded-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition duration-300 ease-in-out"
+          variants={fadeInUp}
+        >
           {/* Image Section */}
           <div className="relative w-full h-[200px] md:h-[250px] overflow-hidden">
             <Image
@@ -117,7 +128,7 @@ const ProjectCarousel = () => {
           </div>
 
           {/* Description Section */}
-          <div className="p-4 text-center ">
+          <div className="p-4 text-center">
             <h3 className="text-lg font-bold text-black dark:text-white mb-2">
               <span className="highlight">{project.title}</span>
             </h3>
@@ -173,19 +184,19 @@ const ProjectCarousel = () => {
             }
 
             .highlight:nth-of-type(3) {
-              animation: highlight-animation 1s ease-in-out 1.5s forwards;
+              animation: highlight-animation 1.5s ease-in-out 1.5s forwards;
             }
 
             .highlight:nth-of-type(4) {
-              animation: highlight-animation 1s ease-in-out 2s forwards;
+              animation: highlight-animation 2s ease-in-out 2s forwards;
             }
 
             .highlight:nth-of-type(5) {
-              animation: highlight-animation 1s ease-in-out 2.5s forwards;
+              animation: highlight-animation 2.5s ease-in-out 2.5s forwards;
             }
 
             .highlight:nth-of-type(6) {
-              animation: highlight-animation 1s ease-in-out 3s forwards;
+              animation: highlight-animation 3s ease-in-out 3s forwards;
             }
 
             @keyframes highlight-animation {
@@ -197,9 +208,9 @@ const ProjectCarousel = () => {
               }
             }
           `}</style>
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
