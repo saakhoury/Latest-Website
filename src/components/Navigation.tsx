@@ -62,11 +62,6 @@ const Navigation = () => {
                     🏠
                   </Button>
                 </Link>
-                <Link href="/music">
-                  <Button size="sm" variant="outline">
-                    🎤
-                  </Button>
-                </Link>
                 <Link href="/experiences">
                   <Button size="sm" variant="outline">
                     💼
@@ -75,11 +70,6 @@ const Navigation = () => {
                 <Link href="/projects">
                   <Button size="sm" variant="outline">
                     🗂️
-                  </Button>
-                </Link>
-                <Link href="/blogs">
-                  <Button size="sm" variant="outline">
-                    📝
                   </Button>
                 </Link>
               </div>

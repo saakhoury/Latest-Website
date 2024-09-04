@@ -292,14 +292,14 @@ export default function Experiences() {
   }
 
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-start w-full"> {/* Align items to the left */}
       {/* Navigation Bar with Smaller Logos */}
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={cardVariants}
-        className="mb-12 flex flex-wrap gap-4 justify-center w-full"
+        className="mb-12 flex flex-wrap gap-4 justify-start w-full"
       >
         {experiences.map((exp) => (
           <button
@@ -323,17 +323,17 @@ export default function Experiences() {
         {experiences.map(
           (exp) =>
             selectedExperience === exp.id && (
-              <div key={exp.id} className="relative mb-0 w-full max-w-3xl">
+              <div key={exp.id} className="relative mb-0 w-full">
                 {/* Experience Card */}
                 <motion.div
                   initial="hidden"
                   animate="visible"
                   exit="exit"
                   variants={cardVariants}
-                  className="relative rounded-lg p-8 shadow-md mx-auto"
+                  className="relative rounded-lg w-full"
                 >
                   {/* Title Section */}
-                  <div className="mb-4 flex flex-col md:flex-row items-center md:items-start">
+                  <div className="mb-4 flex flex-col md:flex-row items-start">
                     {/* Circular Logo */}
                     <div className="mr-4 h-12 w-12 flex-shrink-0">
                       <img
@@ -342,7 +342,7 @@ export default function Experiences() {
                         className="h-full w-full rounded-full object-cover"
                       />
                     </div>
-
+  
                     {/* Title and Company Info */}
                     <div>
                       <h3 className="text-lg font-normal italic">
@@ -354,12 +354,12 @@ export default function Experiences() {
                       </div>
                     </div>
                   </div>
-
+  
                   {/* Description Section */}
                   <div>
                     <div className="text-sm">{exp.description}</div>
                   </div>
-
+  
                   {/* Projects Section */}
                   {exp.projects && (
                     <div className="mt-8">
@@ -397,7 +397,7 @@ export default function Experiences() {
                   )}
                 </motion.div>
               </div>
-            ),
+            )
         )}
       </AnimatePresence>
     </div>
