@@ -51,7 +51,7 @@ const ProjectCarousel = () => {
       title: "Pathfinding Neural Network",
       description: "Self-Driving car with NN (no libraries) + Genetic Algorithms, A* Pathfinding, & Dijkstra's Algorithm",
       tags: ["Python","Lessons"],
-      image: "/projectphotos/nncar.png"
+      image: "/projectphotos/image copy.png"
     },
     {
       title: "Connect",
