@@ -63,9 +63,7 @@ export default function RootLayout({
             <Container>
               <p>
                 Built by{' '}
-                <Link className="link" href="https://twitter.com/hunterhchang">
                   Sanskriti Akhoury
-                </Link>
               </p>
             </Container>
           </footer>
