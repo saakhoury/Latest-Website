@@ -16,7 +16,7 @@ const ProjectCarousel = () => {
     {
       title: "Quant Trading Model",
       description: "Developed a trading strategy using unsupervised learning techniques to optimize investment decisions.",
-      tags: ["Fama French Factors", "Portfolio Optimization", "NLTK", "Scikit-learn"],
+      tags: ["Portfolio Optimization", "NLTK", "Scikit-learn"],
       image: "/projectphotos/quant.webp",
       link: "https://github.com/saakhoury/Unsupervised-Learning-Trading-Strategy" // Add a link for each project
     },
