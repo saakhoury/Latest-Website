@@ -3,7 +3,7 @@
 
 import { useRef } from 'react'
 import { Button } from '@/components/ui/button'
-import { Github, Linkedin, Twitter } from 'lucide-react'
+import { Github, Linkedin, MailIcon, Twitter } from 'lucide-react'
 import Link from 'next/link'
 import ProjectCarousel from '@/components/ProjectCarousel'
 import { motion } from 'framer-motion'
@@ -151,25 +151,30 @@ export default function Home() {
           `}</style>
 
           <div className="mt-[2rem] flex space-x-4">
+          <Link href="https://github.com/saakhoury">
             <Button size="sm" variant="outline" className="p-1">
               <Github size={16} />
             </Button>
+          </Link>
+
+          <Link href="https://www.linkedin.com/in/sanskriti-akhoury/">
             <Button size="sm" variant="outline" className="p-1">
               <Linkedin size={16} />
             </Button>
+          </Link>
+
+          <Link href="mailto:sakhoury@uwaterloo.ca">
             <Button size="sm" variant="outline" className="p-1">
-              <Twitter size={16} />
+              <MailIcon size={16} />
             </Button>
-            <Link href="/experiences">
+          </Link>
+
+            <Link href="file:///Users/sanskritiakhoury/Desktop/sanskritiakhouryWinter2025.pdf">
               <Button size="sm" variant="outline">
                 Resume →
               </Button>
             </Link>
-            <Link href="/experiences">
-              <Button size="sm" variant="outline">
-                Vocal Portfolio →
-              </Button>
-            </Link>
+
           </div>
         </div>
       </motion.div>
