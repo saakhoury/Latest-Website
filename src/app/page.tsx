@@ -169,7 +169,7 @@ export default function Home() {
             </Button>
           </Link>
 
-            <Link href="file:///Users/sanskritiakhoury/Desktop/sanskritiakhouryWinter2025.pdf">
+            <Link href="https://drive.google.com/file/d/1qShx6ZHTSAzBUBNFyigsw-nvot8Fb0FD/view?usp=sharing">
               <Button size="sm" variant="outline">
                 Resume →
               </Button>
