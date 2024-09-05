@@ -169,7 +169,7 @@ export default function Home() {
             </Button>
           </Link>
 
-            <Link href="https://drive.google.com/file/d/1qShx6ZHTSAzBUBNFyigsw-nvot8Fb0FD/view?usp=sharing">
+            <Link href="https://drive.google.com/file/d/1BAIKL5Lhwpdf3gbGStpEA-dSwT6-1riZ/view?usp=sharing">
               <Button size="sm" variant="outline">
                 Resume →
               </Button>
@@ -294,7 +294,7 @@ export default function Home() {
 
       <div className="content mt-[4.5rem]">
         <h2 className="mb-[3rem] text-xl font-bold text-gray-900 dark:text-gray-100">
-          <Link href="/Projects">
+          <Link href="/projects">
             <span className="inline-block transform transition-transform duration-300 hover:scale-125">
               PROJECTS →
             </span>
