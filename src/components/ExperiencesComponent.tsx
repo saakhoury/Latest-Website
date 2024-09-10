@@ -8,7 +8,7 @@ const experiences = [
   {
     id: 'ngen',
     logo: '/images/ngen.png',
-    title: 'Data Engineer',
+    title: 'Data Intern',
     company: '@ NGen Canada',
     description: (
       <div>

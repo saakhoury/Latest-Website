@@ -212,7 +212,7 @@ export default function Home() {
               <div className="flex flex-col space-y-1">
                 <div className="space-y-1">
                   <h2 className="highlight dark:highlight text-lg font-semibold">
-                    DATA ENGINEERING INTERN
+                    DATA INTERN
                   </h2>
                   <p className="text-sm text-gray-700 dark:text-gray-300">
                     @ NGen Canada (2024)
