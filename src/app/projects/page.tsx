@@ -109,14 +109,14 @@ const ProjectCarousel = () => {
       description: "Built a Multimodal Vision Language Model in PyTorch, coding the Contrastive Learning, Vision Transformer, and multi-head attention mechanisms from scratch.",
       tags: ["PyTorch", "Lessons"],
       image: "/projectphotos/comingsoon.jpg",
-      link: "https://chatgpt.com/c/66d94a1b-a078-8000-968b-9c21ffe87328" 
+      link: "https://github.com/saakhoury/VLMFromScratch-" 
     },
     {
       title: "Stable Diffusion from Scratch",
       description: "Developed Stable Diffusion from scratch in PyTorch, implementing the Variational Autoencoder (VAE), CLIP model, and UNet architecture.",
       tags: ["PyTorch", "Lessons"],
       image: "/projectphotos/comingsoon.jpg",
-      link: "https://chatgpt.com/c/66d94a1b-a078-8000-968b-9c21ffe87328" 
+      link: "https://github.com/saakhoury/StableDiffusionFromScratch" 
     },
   ];
 
