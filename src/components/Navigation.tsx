@@ -51,7 +51,7 @@ const Navigation = () => {
               Incoming Software Developer @{' '}
               <button className="focus:outline-none">
                 <span className="rounded-lg border bg-blue-500/10 px-2 py-1 text-black dark:bg-blue-500/20 dark:text-white">
-                  <strong>Coinbase Asset Management</strong>
+                  <strong>Coinbase</strong>
                 </span>
               </button>
             </p>
