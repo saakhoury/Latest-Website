@@ -48,10 +48,10 @@ const Navigation = () => {
               capabilities with NGen Canada.
             </p>
             <p className="text-md mt-2 font-light">
-              Incoming Software Developer @{' '}
+              Incoming Software Developer{' '}
               <button className="focus:outline-none">
                 <span className="rounded-lg border bg-blue-500/10 px-2 py-1 text-black dark:bg-blue-500/20 dark:text-white">
-                  <strong>Coinbase</strong>
+                  <strong>@ Coinbase AM</strong>
                 </span>
               </button>
             </p>
